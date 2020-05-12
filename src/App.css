@@ -1,38 +1,81 @@
 .App {
-  text-align: center;
+  display: flex;
+  justify-content: space-around;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  background-color:#adad85;
+  background-image: url("./Components/img/bg-img.jpg");
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
 .App-header {
   background-color: #282c34;
-  min-height: 100vh;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
   color: white;
+  text-align: center;
+  font-family: Verdana;
 }
-
-.App-link {
-  color: #61dafb;
+.form-login {
+  width: 20%;
+  margin-top: 10%;
+  border-radius: 3%;
+  box-shadow: 10px 10px 5px grey;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.btn-login {
+  margin-top: 5%;
+  width: 43%;
+}
+#info{
+  width: 60%;
+  margin-top: 10%;
+  border-radius: 3%;
+  box-shadow: 10px 10px 5px grey;
+}
+.deposPage {
+  width: 40%;
+  margin-left: 33%;
+  margin-top: 5%;
+}
+.jumbDep {
+  margin-top: 5%;
+}
+.nav-style li a, button{
+  width: 50%;
+  margin: auto;
+}
+.btn-style{
+  width: 20%;
+}
+h5 {
+  margin-bottom: 5%;
+}
+#printWarn{
+  color: red;
+  margin-top: 5%;
+}
+@media only screen and (max-width: 600px) {
+  .App {
+    display: block;
   }
-  to {
-    transform: rotate(360deg);
+  #info{
+    width: 100%;
   }
-}
+  .form-login {
+    width: 100%;
+  }
+  .deposPage {
+    display: inline;
+  }
+  .btn-style{
+    display: inline-block;
+    width: 40%;
+    margin-top: 5%;
+  }
+  .nav-style li{
+    display: flex;
+    width: 100%;
+    padding-bottom: 5%;
+  }
+  .nav-style li a, button{
+    width: 100%;
+  }
+} 
